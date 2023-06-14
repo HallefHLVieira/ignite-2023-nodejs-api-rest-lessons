@@ -5,6 +5,7 @@ import { env } from './env'
 // config port listener para o web-server
 app
   .listen({
+    host: '0.0.0.0',
     port: env.APP_PORT,
   })
   .then(() => {
